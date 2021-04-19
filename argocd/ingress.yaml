@@ -6,9 +6,9 @@ metadata:
   annotations:
     # kubernetes.io/ingress.class: traefik
 spec:
-  tls:
-    - hosts:
-      - "*.localdomain"
+  # tls:
+  #   - hosts:
+  #     - "*.localdomain"
   rules:
   - http:
       paths:
