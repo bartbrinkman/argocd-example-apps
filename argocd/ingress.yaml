@@ -5,8 +5,7 @@ metadata:
   namespace: argocd
   annotations:
     kubernetes.io/ingress.class: traefik
-    ingress.kubernetes.io/ssl-passthrough: "false"
-    ingress.kubernetes.io/secure-backends: "true"
+    ingress.kubernetes.io/protocol: https
 spec:
   rules:
   - http:
