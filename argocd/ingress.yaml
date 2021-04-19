@@ -1,7 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: argocd
+  name: argocd-ingress
+  namepace: argocd
   annotations:
     kubernetes.io/ingress.class: traefik
 spec:
