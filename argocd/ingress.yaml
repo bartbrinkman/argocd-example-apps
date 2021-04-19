@@ -5,6 +5,7 @@ metadata:
   namespace: argocd
   annotations:
     kubernetes.io/ingress.class: traefik
+    traefik.ingress.kubernetes.io/router.tls: "true"
 spec:
   rules:
   - http:
@@ -15,4 +16,4 @@ spec:
           service:
             name: argocd-server
             port:
-              number: 8083
+              number: 8080
